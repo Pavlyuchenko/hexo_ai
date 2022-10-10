@@ -19,83 +19,150 @@
         />
     </head>
     <body>
-        <script src="/script.js"></script>
         <div id="decoration"></div>
 
         <section>
             <h1>Hexo</h1>
             <h3>Millions of Stunning Royalty-free AI Generated Images</h3>
+            <div id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 
             <input type="text" name="search" id="search" placeholder="Search" />
 
             <div id="images">
-                <div>
-                    <img id="test" class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+                <img
+                    class="image"
+                    src="/loading.svg"
+                    onclick="showModal(this);"
+                />
+            </div>
 
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-
-                <div>
-                    <img class="image" src="/loading.svg" />
-                </div>
-                <div>
-                    <img class="image" src="/loading.svg" />
+            <div id="modal">
+                <div id="modal-content">
+                    <div id="modal-image-wrapper">
+                        <img id="modal-image" src="" />
+                    </div>
+                    <div id="modal-buttons">
+                        <button id="modal-close" onclick="closeModal();">
+                            X
+                        </button>
+                        <div>
+                            <h4>Prompt</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Labore, eligendi repellat
+                                perspiciatis molestiae natus eveniet deleniti
+                                dolorem ea consequuntur, dicta corrupti aperiam
+                                hic eius deserunt illo excepturi fugit qui
+                                alias?
+                            </p>
+                        </div>
+                        <button id="modal-download" onclick="downloadImage();">
+                            Download
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <script src="/script.js"></script>
     </body>
 </html>
