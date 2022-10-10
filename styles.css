@@ -81,6 +81,23 @@ h3 {
     color: #c8c8c8;
 }
 
+#discord {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+
+    position: absolute;
+    right: 120px;
+    top: 20px;
+
+    cursor: pointer;
+}
+#discord img {
+    width: 28px;
+    border-radius: 3px;
+}
 #hamburger {
     width: 25px;
 
@@ -357,5 +374,15 @@ h3 {
     #modal-buttons p {
         margin-top: 0;
         font-size: 16px;
+    }
+
+    #discord {
+        left: 20px;
+
+        font-size: 16px;
+        gap: 5px;
+    }
+    #discord img {
+        width: 20px;
     }
 }
