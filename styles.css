@@ -2,6 +2,30 @@
     --color-primary: #0e1117;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c6e72;
+    border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #898a8d;
+}
+::-webkit-scrollbar-track:active {
+    background-color: #3d4044;
+}
+
 html,
 body {
     margin: 0;
@@ -71,6 +95,7 @@ h3 {
     gap: 5px;
 
     background-color: #262730;
+    z-index: 1000;
 
     cursor: pointer;
 }
@@ -181,6 +206,7 @@ h3 {
     max-width: 100vw;
 
     background-color: rgba(1, 1, 1, 0.8);
+    border-radius: 8px;
 
     box-sizing: border-box;
     padding: min(200px, 10%) max(calc((100% - 70rem) / 2), 20px);
@@ -189,6 +215,7 @@ h3 {
     justify-content: center;
 
     display: none;
+    z-index: 1001;
 }
 #modal-content {
     max-width: 100%;
@@ -229,19 +256,26 @@ h3 {
 #modal-close {
     width: 30px;
     height: 30px;
-    line-height: 23px;
-    font-weight: 700;
-
-    border-radius: 50%;
-    border: 4px solid #fff;
-    background-color: transparent;
-    color: #fff;
 
     position: absolute;
     right: 10px;
     top: 10px;
 
+    background-color: transparent;
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
+    transition: 0.15s;
+}
+#modal-close:hover {
+    filter: brightness(0.85);
+}
+#modal-close img {
+    width: 30px;
 }
 #modal h4 {
     margin-top: 0;
@@ -256,8 +290,8 @@ h3 {
 }
 #modal-download {
     width: 100%;
-    background-color: #fff;
-    color: #800080;
+    background-color: #5b92e5;
+    color: #fff;
     border: 0;
     height: 40px;
     border-radius: 8px;
@@ -281,6 +315,9 @@ h3 {
         column-count: 1;
         margin-top: 15px;
     }
+    .image {
+        margin: 0 0 25px;
+    }
     section {
         padding: 10px 20px;
     }
@@ -288,20 +325,23 @@ h3 {
         margin-top: 5px;
     }
     #modal {
-        padding: 0 20px;
+        padding: 20px 20px;
         max-height: 100vh;
+
+        align-items: flex-start;
     }
     #modal-content {
         flex-direction: column;
         gap: 15px;
         max-height: 100vh;
+        padding-top: 50px;
     }
     #modal-image {
-        max-height: 50vh;
+        max-height: 30vh;
     }
     #modal-close {
-        right: 5px;
-        top: 5px;
+        right: 10px;
+        top: 10px;
         width: 25px;
         height: 25px;
         line-height: 15px;
@@ -310,5 +350,12 @@ h3 {
     }
     #modal-buttons {
         min-width: fit-content;
+    }
+    #modal-buttons h4 {
+        font-size: 24px;
+    }
+    #modal-buttons p {
+        margin-top: 0;
+        font-size: 16px;
     }
 }
