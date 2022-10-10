@@ -90,6 +90,8 @@ h3 {
     column-gap: 15px;
 
     margin-top: 30px;
+
+    width: 100%;
 }
 #images div {
     margin: 0 0 15px;
@@ -98,6 +100,7 @@ h3 {
 .image {
     width: 100%;
     max-width: 100%;
+    min-width: 100%;
 }
 
 @media (max-width: 1200px) {
