@@ -335,6 +335,10 @@ h3 {
     .image {
         margin: 0 0 25px;
     }
+    #hamburger {
+        right: 20px;
+    }
+
     section {
         padding: 10px 20px;
     }
@@ -378,11 +382,13 @@ h3 {
 
     #discord {
         left: 20px;
-
-        font-size: 16px;
-        gap: 5px;
+        width: 25px;
     }
     #discord img {
-        width: 20px;
+        width: 25px;
+    }
+    #discord-text {
+        display: none;
+        font-size: 0;
     }
 }
