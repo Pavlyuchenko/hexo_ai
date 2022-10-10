@@ -65,3 +65,8 @@ async function downloadImage() {
     a.click();
     document.body.removeChild(a);
 }
+
+function showHamburger() {
+    var hamburger = document.getElementById("menu");
+    hamburger.classList.toggle("show");
+}
