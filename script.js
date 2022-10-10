@@ -58,12 +58,21 @@ async function toDataURL(url) {
     return URL.createObjectURL(blob);
 }
 async function downloadImage() {
-    const a = document.createElement("a");
-    a.href = await toDataURL(document.getElementById("modal-image").src);
-    a.download = "HexoAI_image.png";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    try {
+        const a = document.createElement("a");
+        a.href = await toDataURL(document.getElementById("modal-image").src);
+        a.download = "HexoAI_image.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    } catch (e) {
+        const a = document.createElement("a");
+        a.href = document.getElementById("modal-image").src;
+        a.download = "HexoAI_image.png";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
 }
 
 function showHamburger() {
